@@ -1,6 +1,7 @@
 var gulp     = require('gulp');
 var plugins  = require('gulp-load-plugins')();
 var notifier = require('node-notifier');
+var inlinesource = require('gulp-inline-source');
 
 // error handler
 // system notification, console log, emit end (so watch continues)
@@ -21,6 +22,12 @@ gulp.task('html', function() {
     .pipe(plugins.htmlmin({ collapseWhitespace: true, removeComments: true }))
     .pipe(gulp.dest('./'))
     .pipe(plugins.connect.reload());
+});
+
+gulp.task('inline', function () {
+    return gulp.src('*.html')
+        .pipe(inlinesource())
+        .pipe(gulp.dest('./'));
 });
 
 // compile and compress sass

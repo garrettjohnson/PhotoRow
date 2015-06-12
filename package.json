@@ -2,6 +2,10 @@
   "name": "PhotoRow",
   "version": "0.0.1",
   "description": "Github Pages for PhotoRow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garrettjohnson/photorow.git"
+  },
   "author": "Garrett Johnson",
   "devDependencies": {
     "gulp": "^3.8.10",
