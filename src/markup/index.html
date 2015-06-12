@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!--[if IE 9]>         <html class="ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-US"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PhotoRow</title>
+    <meta name="description" content="PhotoRow: A little jQuery plugin for making evenly sized rows of images.">
+    <meta name="author" content="Garrett Johnson">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="icon" type="image/x-icon" href="./images/icons/favicongrid.png">
+        <script>
+      var _gaq = _gaq || [];
+      // // _gaq.push(['_setAccount', 'UA-36050008-1']);
+      // _gaq.push(['_trackPageview']);
+
+      // (function() {
+      //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      // })();
+    </script>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<!--[if lt IE 9]>
+  <div class="bs-callout bs-callout-danger">
+    <h4>Attention!</h4>
+    <p>
+      Looks like your current browser is old and doesn't support many features used in this page.
+      Please take a second to <a href="http://browsehappy.com/">upgrade to a more modern browser</a>.
+    </p>
+  </div>
+<![endif]-->
+
+    <div class="wrapper">
+
+      <header class="header">
+        
+        
+      </header><!-- END header -->
+
+      <section class="intro">
+        <h1 class="logo">PhotoRow</h1>
+        <h3 class="tagline">A little jQuery plugin for making evenly sized rows of images</h3>
+
+        <a class="download" href="//github.com/garrettjohnson/photorow/" onclick="_gaq.push(['_trackEvent', 'Download', 'V0.1.0' ">View on Github</a>
+        <p class="version">Currently Pre-Release<!-- v0.1.0 --></p>
+
+        <hr class="section-rule">
+
+        <div class="photo-set-group" data-layout="312">
+          <img src="./images/example/img1.jpeg" width="1000" height="667">
+          <img src="./images/example/img5.jpeg" width="1000" height="667">
+          <img src="./images/example/img6.jpeg" width="1000" height="661">
+          <img src="./images/example/img3.jpeg" width="1000" height="465">
+          <img src="./images/example/img4.jpeg" width="716" height="1000">
+          <img src="./images/example/img2.jpeg" width="1000" height="563">
+        </div>
+
+        <hr class="section-rule">
+
+        <p class="lead">Documentation and explanation coming soon.</p>
+
+      </section><!-- END intro -->
+
+      <hr class="section-rule">
+
+      <section class="doc-block">
+        <h2 class="doc-block-heading">Colophon</h2>
+
+        <p>Stock Photos: <a href="//unsplash.com/" target="_blank">Unsplash</a>, <a href="https://www.flickr.com/photos/saaleha/8145244863">Blue Bottle</a></p>
+        <p>Inspiration: <a href="http://medium.com" target="_blank">Medium</a>, <a href="http://exposure.co" target="_blank">Exposure</a>
+        <p>Fav Icon:  <a href="https://thenounproject.com/term/layout/13008/" target="_blank">Layout by icons.design from the Noun Project</a></p>
+      </section>
+
+      <hr class="section-rule">
+
+      <section class="doc-block">
+        <h2 class="doc-block-heading">License</h2>
+
+        <p>MIT. &copy; Garrett Johnson</p>
+      </section>
+
+    </div><!-- END wrapper -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script src="scripts.js"></script>
+    <script type="text/javascript">$('.photo-set-group').photoRow();</script>
+
+  </body>
+</html>

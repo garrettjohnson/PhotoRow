@@ -1,0 +1,51 @@
+.logo {
+  width: 330px;
+  height: 91px;
+  margin-bottom: 25px;
+  background: url("images/photorow-logo.svg") center center no-repeat;
+  background-size: contain;
+  @include hide-text;
+}
+
+.version{display:inline-block;opacity:.25;}
+
+.download {
+  display: none;
+
+  @include mq-min($desktop) {
+    display: inline-block;
+    border: 2px solid #AFBDC4;
+    border-radius: 3px;
+    font-family: $header-fontstack;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    @include letter-spacing(1px);
+    color: #AFBDC4;
+    padding: 7px 10px;
+    text-transform:uppercase;
+    margin-right: 10px;
+  }
+}
+
+.doc-block {
+  @include mq-min($desktop) {
+    position: relative;
+  }
+
+  * {
+    margin-bottom: 25px;
+  }
+}
+
+.doc-block-heading {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 4px solid $brand-color;
+  font-family: $header-fontstack;
+  font-weight: bold;
+  font-size: 2.0rem;
+  text-transform: uppercase;
+  @include letter-spacing(5px);
+  color: #36464E;
+}

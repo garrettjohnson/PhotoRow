@@ -1,0 +1,29 @@
+.photo-set-group.no-photoset-padding .photo img {
+    padding: none !important
+}
+
+.photo-set-group, .photoset-row{
+  @include clearfix
+}
+
+.photo-set-group{
+  @include mq-min($desktop) {
+    margin: 0 -100px;
+  }
+}
+
+//.photo * {
+//  box-sizing: border-box;
+//}
+
+.photo {
+  position: relative;
+  float: left;
+}
+
+.photo img {
+  padding:7px;
+  width: 100%;
+  height: 100%;
+}
+.zoom-img-wrap img{border: 0;}

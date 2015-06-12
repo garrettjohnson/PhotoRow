@@ -1,0 +1,36 @@
+// MIXINS
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+@mixin letter-spacing($length) {
+  letter-spacing: $length;
+  text-indent: $length;
+}
+
+@mixin vertical-center {
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+
+// HELPERS
+
+
+@mixin mq-min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}

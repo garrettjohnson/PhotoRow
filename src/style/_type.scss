@@ -1,0 +1,16 @@
+.tagline {
+  margin-bottom: 45px;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 1.25;
+}
+
+.lead {
+  margin-bottom: 25px;
+  font-size: 2.1rem;
+
+  &:first-of-type,
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,48 @@
+// breakpoints
+
+$desktop: 900px;
+
+// color vars
+
+$brand-color: #d83731; //# CCDB38
+$header-color: #36464E;
+$teal: #536D79;
+$bg-color: #F9F9F9;
+
+// font vars
+
+$body-fontstack: "Roboto", sans-serif;
+$header-fontstack: "Roboto", sans-serif;
+
+// mixins and reset
+
+@import "mixins";
+@import "reset";
+
+body {
+  padding: 15vh 0;
+  background-color: $bg-color;
+  border-top: 3px solid $brand-color;
+  font-family: $body-fontstack;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $teal;
+  -webkit-font-smoothing:antialiased;
+
+  @include mq-min($desktop) {
+    padding: 22.5vh 0;
+  }
+}
+
+a {
+  color: $brand-color;
+}
+
+// partials
+
+@import "layout";
+@import "pagestyle";
+@import "type";
+@import "photorow";
+@import "zoomjs";
